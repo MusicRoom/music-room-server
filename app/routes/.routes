@@ -1,0 +1,18 @@
+All routes start with /api/v1
+
+for Users:
+	get	'/me'						=> return the authenticated user
+	get '/me/playlists'				=> return the authenticated user's playlists
+	get '/me/playlists/:id'			=> return the authenticated user's playlist with :id
+
+	patch '/me'						=> update some data and return the user
+
+	post '/signup'					=> create new user and return it
+
+	get '/users/:id'				=> return the user with :id
+	get '/users/:id/playlists'		=> return the user's public playlists with :id
+	get '/users/:id/playlists'		=> return the user's public playlist with :id
+
+for Playlist:
+	get '/playlists'				=> same as GET '/me/playlists'
+	get '/playlists/:id'			=> same as GET '/me/playlists/:id'
