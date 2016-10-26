@@ -1,0 +1,22 @@
+{
+  "name": "music-room",
+  "version": "1.0.0",
+  "description": "This server is a web API for the MusicRoom application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MusicRoom/music-room-server.git"
+  },
+  "author": "niccheva llapillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MusicRoom/music-room-server/issues"
+  },
+  "homepage": "https://github.com/MusicRoom/music-room-server#readme",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
