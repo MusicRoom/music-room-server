@@ -1,13 +1,11 @@
 User = require '../models/User.model'
 
 class UserController
-#  one: (cb) ->
-#    User.find cb
 
   # curl -H "Content-Type: application/json" -X POST /api/users -d '{ "user": { ... } }'
   create: (req, res)->
 
-    res.json {} if params(req.body)
+#    res.json {} if params(req.body)
 
     user = new User req.body.user
     user.save (err)->
@@ -28,7 +26,7 @@ class UserController
   delete: (req, res)->
     #
 
-  params = (req)->
-    !req.requi
+#  params = (req)->
+#    !req.requi
 
 module.exports = new UserController()

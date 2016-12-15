@@ -6,7 +6,8 @@ PlaylistController = require '../controllers/Playlist.controller'
 
 # GET /playlists
 
-router.get '/', (req, res, next) ->
-  PlaylistController.all
+router.post '/', PlaylistController.create
+
+router.get '/:id', PlaylistController.read
 
 module.exports = router

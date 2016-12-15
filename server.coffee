@@ -19,3 +19,8 @@ app.use '/api/users', userRouter
 app.use '/api/playlists', playlistRouter
 app.use '/api/tracks', trackRouter
 
+filter = (obj, keys) ->
+  newObj = {}
+  keys.forEach (key)->
+    newObj[key] = obj[key] if typeof obj[key] != "undefined" and obj[key] != null
+  newObj

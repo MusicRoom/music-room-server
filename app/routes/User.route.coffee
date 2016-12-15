@@ -3,7 +3,6 @@ router = express.Router()
 
 mongoose = require 'mongoose'
 UserController = require '../controllers/User.controller'
-User = require '../models/User.model'
 
 # GET /users
 
