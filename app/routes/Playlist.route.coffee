@@ -1,5 +1,5 @@
 express = require 'express'
-router = express.Router
+router = express.Router()
 
 mongoose = require 'mongoose'
 PlaylistController = require '../controllers/Playlist.controller'
