@@ -1,0 +1,113 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MusicRoom",
+		"_postman_id": "e2e01521-63cd-793e-bf59-a5f564c99747",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"request": {
+				"url": "{{API}}/api/users",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\" : {\n\t\t\"local\" : {\n\t\t\t\"name\" : \"Bob\"\n\t\t}\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"url": "{{API}}/api/users/5853c2e82e50cf15209b9a90",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\": {\n\t\t\"name\": \"Bob\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Playlists",
+			"request": {
+				"url": "{{API}}/api/playlists",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"playlist\" : {\n\t\t\"name\" : \"Bob\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Playlists",
+			"request": {
+				"url": "{{API}}/api/playlists/5853c3bc2e50cf15209b9a92",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"playlist\" : {\n\t\t\"name\" : \"Bob\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tracks",
+			"request": {
+				"url": "{{API}}/api/tracks",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"track\" : {\n\t\t\"name\" : \"Bob\",\n\t\t\"id_deezer\": 42,\n\t\t\"duration\": 42,\n\t\t\"artist\": \"Sting\",\n\t\t\"album\": \"String\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Tracks",
+			"request": {
+				"url": "{{API}}/api/tracks/5853c4d12e50cf15209b9a93",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"track\" : {\n\t\t\"name\" : \"Bob\",\n\t\t\"id_deezer\": 42,\n\t\t\"duration\": 42,\n\t\t\"artist\": \"Sting\",\n\t\t\"album\": \"String\"\n\t}\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
